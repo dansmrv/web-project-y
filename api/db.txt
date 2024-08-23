@@ -1,0 +1,23 @@
+CREATE TABLE Container(
+    Id int UNIQUE,
+    Type varchar(30) NOT NULL, 
+    Lenght int NOT NULL,
+    Width int NOT NULL,
+    Height int NOT NULL,
+    Weight int NOT NULL,
+    IsEmpty BIT NOT NULL,
+    ArivingDate DateTime NOT NULL
+);
+
+CREATE TABLE Operation(
+    Id int UNIQUE,
+    IdContainer int NOT NULL,
+    DateStart DateTime NOT NULL,
+    DateEnd DateTime NOT NULL,
+    Type string NOT NULL,
+    FullName varchar(80) NOT NULL,
+    MyProperty int NOT NULL,
+    InspectionPlace varchar(30) NOT NULL
+);
+
+
