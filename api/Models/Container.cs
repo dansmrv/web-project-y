@@ -7,10 +7,10 @@ namespace api.Models
 {
     public class Container
     {
-        public int Id { get; set; }
+        public Guid Id { get; set; }
         public int Number { get; set; }
         public string Type { get; set; } = string.Empty;
-        public int Lenght { get; set; }
+        public int Length { get; set; }
         public int  Width { get; set; }
         public int Height { get; set; }
         public int Weight { get; set; }
