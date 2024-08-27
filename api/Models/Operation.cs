@@ -15,7 +15,7 @@ namespace api.Models
         public string OperationType { get; set; } = string.Empty;
         public string OparatorFullName { get; set; } = string.Empty;
         public string InspectionPlace { get; set; } = string.Empty;
-        public Container Container { get; set; } 
+        public Container? Container { get; set; } 
 
 
     }
